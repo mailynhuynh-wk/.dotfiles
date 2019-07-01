@@ -1,0 +1,22 @@
+[core]
+	excludesfile = /Users/mailynhuynh/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[user]
+	name = Mailyn Huynh
+	email = mailyn.huynh@workiva.com
+[commit]
+	template = /Users/mailynhuynh/.stCommitMsg
+[diff]
+	tool = p4merge
+[merge]
+	tool = p4merge
+[difftool]
+	prompt = 0
+[mergetool]
+	prompt = 0
+	keepBackup = false
